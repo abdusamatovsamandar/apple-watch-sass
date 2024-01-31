@@ -10,3 +10,14 @@
   text-decoration: none;
   background-color: transparent;
 }
+
+@mixin btn-styles{
+  color: $color-neutral;
+  width: 260px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+  border: none;
+  padding: 12px;
+  background-color: $bakground-secondary;
+}

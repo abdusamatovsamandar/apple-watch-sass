@@ -11,6 +11,12 @@ body {
   margin: 0;
 }
 
+.line {
+  height: 2px;
+  background-color: #ddd;
+  margin: 0;
+}
+
 .contanier {
   width: 100%;
   max-width: 1030px;
@@ -103,4 +109,61 @@ body {
 }
 
 /*--------------------------------------- HEADER STYLE END ---------------------------------------*/
+.hero {
+  padding: 170px 0 183px;
+  background-image: url(../../assets/images/watches.png);
+  background-repeat: no-repeat;
+  background-size: 587px;
+  background-position: calc(50% + 556px) 85px;
+}
+
+.hero__wrapper {
+  width: 100%;
+  max-width: 490px;
+}
+
+.hero__title {
+  color: #000;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.hero__desc {
+  position: relative;
+  color: #777;
+  font-size: 16px;
+  line-height: 150%;
+  padding-left: 40px;
+  margin-bottom: 30px;
+}
+
+.hero__desc::before {
+  position: absolute;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  display: inline-block;
+  content: "";
+  background-color: #888;
+}
+
+.hero__btn {
+  color: #fff;
+  width: 260px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+  border: none;
+  padding: 12px;
+  background-color: #ea625c;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../assets/images/watches@2x.png);
+  }
+}
 /*# sourceMappingURL=main.css.map */

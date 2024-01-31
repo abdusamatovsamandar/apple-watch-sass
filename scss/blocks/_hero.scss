@@ -1,0 +1,56 @@
+.hero{
+  padding: 170px 0 183px;
+  background-image: url(../../assets/images/watches.png);
+  background-repeat: no-repeat;
+  background-size: 587px;
+  background-position: calc(50% + 556px) 85px;
+  
+  &__wrapper{
+    width: 100%;
+    max-width: 490px;
+  }
+  
+  &__title{
+    color: $color-tertiary;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 120%;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  
+  &__desc{
+    position: relative;
+    color: $color-accent;
+    font-size: 16px;
+    line-height: 150%;
+    padding-left: 40px;
+    margin-bottom: 30px;
+    
+    &::before{
+      position: absolute;
+      left: 0;
+      width: 3px;
+      height: 100%;
+      display: inline-block;
+      content: "";
+      background-color: #888;
+    }
+  }
+  
+  &__btn{
+    @include btn-styles;
+  }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  .hero{
+    background-image: url(../../assets/images/watches@2x.png);
+  }
+}

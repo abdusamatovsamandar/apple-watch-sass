@@ -20,5 +20,11 @@ body{
   margin: 0;
 }
 
+.line{
+  height: 2px;
+  background-color: #ddd;
+  margin: 0;
+}
+
 @import "mixins";
 @import "blocks/blocks";
