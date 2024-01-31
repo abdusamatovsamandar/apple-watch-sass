@@ -9,8 +9,7 @@
   }
 
   &__wrapper-start{
-    width: 100%;
-    max-width: 490px;
+    @include wrapper;
   }
 
   &__title{
