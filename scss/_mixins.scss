@@ -11,6 +11,11 @@
   background-color: transparent;
 }
 
+@mixin wrapper{
+  width: 100%;
+  max-width: 490px;
+}
+
 @mixin title-styles{
   color: $color-tertiary;
   font-size: 50px;

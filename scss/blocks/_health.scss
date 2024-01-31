@@ -1,0 +1,44 @@
+/*--------------------------------------- HEALTH STYLE START ---------------------------------------*/
+.health{
+  padding: 240px 0;
+  background-image: url(../../assets/images/runners-1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) { 
+    .health{
+      background-image: url(../../assets/images/runners-1@2x.jpg);
+    }
+  }
+
+  &__wrapper{
+    @include wrapper;
+    margin-left: auto;
+  }
+
+  &__title{
+    @include title-styles;
+    color: $color-neutral;
+  }
+
+  &__desc{
+    @include desc-styles;
+    color: $color-neutral;
+
+    &::before{
+      
+    background-color: $bakground-primary;
+    }
+  }
+
+  &__btn{
+    @include btn-styles;
+  }
+}
+/*--------------------------------------- HEALTH STYLE END ---------------------------------------*/

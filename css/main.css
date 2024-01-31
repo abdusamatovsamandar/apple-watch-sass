@@ -123,6 +123,12 @@ body {
   background-position: calc(50% + 556px) 85px;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: url(../../assets/images/watches@2x.png);
+  }
+}
+
 .hero__wrapper {
   width: 100%;
   max-width: 490px;
@@ -165,12 +171,6 @@ body {
   border: none;
   padding: 12px;
   background-color: #ea625c;
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .hero {
-    background-image: url(../../assets/images/watches@2x.png);
-  }
 }
 
 /*--------------------------------------- HERO STYLE END ---------------------------------------*/
@@ -313,4 +313,70 @@ body {
 }
 
 /*--------------------------------------- WATCH STYLE END ---------------------------------------*/
+/*--------------------------------------- HEALTH STYLE START ---------------------------------------*/
+.health {
+  padding: 240px 0;
+  background-image: url(../../assets/images/runners-1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .health .health {
+    background-image: url(../../assets/images/runners-1@2x.jpg);
+  }
+}
+
+.health__wrapper {
+  width: 100%;
+  max-width: 490px;
+  margin-left: auto;
+}
+
+.health__title {
+  color: #000;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.health__desc {
+  position: relative;
+  color: #777;
+  font-size: 16px;
+  line-height: 150%;
+  padding-left: 40px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.health__desc::before {
+  position: absolute;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  display: inline-block;
+  content: "";
+  background-color: #888;
+}
+
+.health__desc::before {
+  background-color: #fff;
+}
+
+.health__btn {
+  color: #fff;
+  width: 260px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+  border: none;
+  padding: 12px;
+  background-color: #ea625c;
+}
+
+/*--------------------------------------- HEALTH STYLE END ---------------------------------------*/
 /*# sourceMappingURL=main.css.map */
