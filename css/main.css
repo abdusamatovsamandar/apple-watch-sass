@@ -1,3 +1,5 @@
+/* COLOR */
+/* BAKGROUND-COLOR */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -8,4 +10,97 @@ body {
   font-weight: 400;
   margin: 0;
 }
+
+.contanier {
+  width: 100%;
+  max-width: 1030px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/*--------------------------------------- HEADER STYLE START ---------------------------------------*/
+.site-header {
+  padding: 30px 0;
+}
+
+.site-header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-header__wrapper-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-header__nav {
+  margin-right: 40px;
+}
+
+.site-header__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.site-header__nav-link {
+  color: #333;
+  font-size: 15px;
+  line-height: 150%;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.site-header__search-input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #333;
+  padding-bottom: 6px;
+}
+
+.site-header__search-input::-webkit-input-placeholder {
+  color: #666;
+  font-size: 15px;
+  line-height: 150%;
+}
+
+.site-header__search-input:-ms-input-placeholder {
+  color: #666;
+  font-size: 15px;
+  line-height: 150%;
+}
+
+.site-header__search-input::-ms-input-placeholder {
+  color: #666;
+  font-size: 15px;
+  line-height: 150%;
+}
+
+.site-header__search-input::placeholder {
+  color: #666;
+  font-size: 15px;
+  line-height: 150%;
+}
+
+/*--------------------------------------- HEADER STYLE END ---------------------------------------*/
 /*# sourceMappingURL=main.css.map */

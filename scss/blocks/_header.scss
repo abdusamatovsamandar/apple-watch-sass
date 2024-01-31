@@ -1,0 +1,47 @@
+/*--------------------------------------- HEADER STYLE START ---------------------------------------*/
+.site-header{
+  padding: 30px 0;
+  
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  &__wrapper-end{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  &__nav{
+    margin-right: 40px;
+  }
+  
+  &__nav-list{
+    display: flex;
+    gap: 30px;
+    @include list-unstyled;
+  }
+  
+  &__nav-link{
+    color: $color-primary;
+    font-size: 15px;
+    line-height: 150%;
+    @include link-unstyled;
+  }
+  
+  &__search-input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid $color-primary;
+    padding-bottom: 6px;
+  }
+  
+  &__search-input::placeholder{
+    color: #666;
+    font-size: 15px;
+    line-height: 150%;
+  }
+}
+/*--------------------------------------- HEADER STYLE END ---------------------------------------*/
