@@ -251,4 +251,66 @@ body {
 }
 
 /*--------------------------------------- INFO STYLE END ---------------------------------------*/
+/*--------------------------------------- WATCH STYLE START ---------------------------------------*/
+.watch {
+  padding: 70px 0;
+}
+
+.watch__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.watch__wrapper-start {
+  width: 100%;
+  max-width: 490px;
+}
+
+.watch__title {
+  color: #000;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.watch__desc {
+  position: relative;
+  color: #777;
+  font-size: 16px;
+  line-height: 150%;
+  padding-left: 40px;
+  margin-bottom: 30px;
+}
+
+.watch__desc::before {
+  position: absolute;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  display: inline-block;
+  content: "";
+  background-color: #888;
+}
+
+.watch__btn {
+  color: #fff;
+  width: 260px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+  border: none;
+  padding: 12px;
+  background-color: #ea625c;
+}
+
+/*--------------------------------------- WATCH STYLE END ---------------------------------------*/
 /*# sourceMappingURL=main.css.map */

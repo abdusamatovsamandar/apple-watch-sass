@@ -12,31 +12,11 @@
   }
   
   &__title{
-    color: $color-tertiary;
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 120%;
-    margin-top: 0;
-    margin-bottom: 30px;
+    @include title-styles;
   }
   
   &__desc{
-    position: relative;
-    color: $color-accent;
-    font-size: 16px;
-    line-height: 150%;
-    padding-left: 40px;
-    margin-bottom: 30px;
-    
-    &::before{
-      position: absolute;
-      left: 0;
-      width: 3px;
-      height: 100%;
-      display: inline-block;
-      content: "";
-      background-color: #888;
-    }
+    @include desc-styles;
   }
   
   &__btn{

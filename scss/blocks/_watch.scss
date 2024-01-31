@@ -1,0 +1,28 @@
+/*--------------------------------------- WATCH STYLE START ---------------------------------------*/
+.watch{
+  padding: 70px 0;
+
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__wrapper-start{
+    width: 100%;
+    max-width: 490px;
+  }
+
+  &__title{
+    @include title-styles;
+  }
+
+  &__desc{
+    @include desc-styles;
+  }
+
+  &__btn{
+    @include btn-styles;
+  }
+}
+/*--------------------------------------- WATCH STYLE END ---------------------------------------*/
