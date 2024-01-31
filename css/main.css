@@ -11,7 +11,12 @@ body {
   margin: 0;
 }
 
+.visually-hidden {
+  display: none;
+}
+
 .line {
+  border: none;
   height: 2px;
   background-color: #ddd;
   margin: 0;
@@ -109,6 +114,7 @@ body {
 }
 
 /*--------------------------------------- HEADER STYLE END ---------------------------------------*/
+/*--------------------------------------- HERO STYLE START ---------------------------------------*/
 .hero {
   padding: 170px 0 183px;
   background-image: url(../../assets/images/watches.png);
@@ -166,4 +172,83 @@ body {
     background-image: url(../../assets/images/watches@2x.png);
   }
 }
+
+/*--------------------------------------- HERO STYLE END ---------------------------------------*/
+/*--------------------------------------- INFO STYLE START ---------------------------------------*/
+.info {
+  padding: 70px 0;
+}
+
+.info__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.info__item {
+  width: 100%;
+  max-width: 280px;
+}
+
+.info__item::after {
+  display: block;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #ddd;
+  -webkit-box-shadow: 18px 0 0 0 #ddd, 36px 0 0 0 #ddd;
+          box-shadow: 18px 0 0 0 #ddd, 36px 0 0 0 #ddd;
+}
+
+.info__item-title {
+  color: #222;
+  font-size: 18px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.info__item-desc {
+  color: #333;
+  font-size: 15px;
+  margin-bottom: 20px;
+  line-height: 160%;
+}
+
+.info__item:last-child::after {
+  display: none;
+}
+
+.info__item-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ea625c;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.info__item-link::before {
+  display: block;
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: #ea625c;
+  margin-right: 10px;
+}
+
+/*--------------------------------------- INFO STYLE END ---------------------------------------*/
 /*# sourceMappingURL=main.css.map */

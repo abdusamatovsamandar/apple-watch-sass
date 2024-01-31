@@ -20,7 +20,12 @@ body{
   margin: 0;
 }
 
+.visually-hidden{
+  display: none;
+}
+
 .line{
+  border: none;
   height: 2px;
   background-color: #ddd;
   margin: 0;
